@@ -8,9 +8,9 @@
         <meta http-equiv="content-language" content="zh-CN" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>八牛网</title>
-        <meta name="keywords" content="八牛,微媒体,八牛网,八牛视频,八牛直播,八牛记录,斗鱼,龙珠,虎牙,熊猫TV" />
-        <meta name="description" content="八牛视频一个多屏多视频播放平台，兼容斗鱼、龙珠、虎牙直播及优酷、搜狐、爱奇艺、腾讯视频、芒果TV、乐视TV、土豆网视频网！" />
+        <title>三屏 - 二进制网媒</title>
+        <meta name="keywords" content="二进制网媒,斗鱼,龙珠,虎牙,熊猫TV,优酷,爱奇艺,搜狐,腾讯,八牛记录 " />
+    	<meta name="description" content="二进制网媒，一个融合直播、视频多屏播放平台，支持各大大型视频平台！" />
         <meta content="大辉Face 王辉" name="author">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -23,7 +23,37 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
+		<header id="HOME" style="background-position: 50% -125px;">
+			<section>
+				<div class="section_overlay">
+					<nav class="navbar navbar-default navbar-fixed-top">
+					  <div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <a class="navbar-brand" href="#">双屏 - 二进制网媒</a>
+						</div>
+	
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						  <ul class="nav navbar-nav navbar-right">
+							<li><a href="http://www.bbcow.com">首页</a></li>
+							<li><a href="/index2.html">双屏页面</a></li>
+							<li><a href="/index3.html">三屏页面</a></li>
+							<li><a href="/history.html">记录</a></li>
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+					  </div><!-- /.container -->
+					</nav> 
+	
+				</div>
+			</section>
+		</header>
         <!-- Add your site or application content here -->
 
         <div class="container-fluid">
@@ -45,9 +75,6 @@
             </div>
 
             <div class="row">
-                <div class="col-md-12 col-sd-12">
-                    <a href="/"><h3>首页</h3></a>
-                </div>
                 <div class="col-md-12 col-sd-12">
                     <script type="text/javascript">
                         /*测试*/
@@ -108,13 +135,13 @@
                 }
 
                 if(vf == null || vf == undefined){
-                    var v = "<iframe src='"+ message.data+"' id='f_1' class='col-md-12 col-sd-12' height='"+((screen.availHeight-100)/2)+"'>";
+                    var v = "<embed src='"+ message.data+"' allownetworking='all' allowscriptaccess='always' id='f_1' quality='high' bgcolor='#000' wmode='window' allowfullscreen='true' allowFullScreenInteractive='true' type='application/x-shockwave-flash' class='col-md-12 col-sd-12' height='"+((screen.availHeight-100)/2)+"'>";
                     document.getElementById("v_1").innerHTML = v;
                 }else if(vf2 == null || vf2 == undefined){
-                    var v = "<iframe src='"+ message.data+"' id='f_2' class='col-md-12 col-sd-12' height='"+((screen.availHeight-100)/2)+"'>";
+                    var v = "<embed src='"+ message.data+"' allownetworking='all' allowscriptaccess='always' id='f_2' quality='high' bgcolor='#000' wmode='window' allowfullscreen='true' allowFullScreenInteractive='true' type='application/x-shockwave-flash' class='col-md-12 col-sd-12' height='"+((screen.availHeight-100)/2)+"'>";
                     document.getElementById("v_2").innerHTML = v;
                 }else{
-                    var v = "<iframe src='"+ message.data+"' id='f_3' class='col-md-12 col-sd-12' height='"+((screen.availHeight-100)/2)+"'>";
+                    var v = "<embed src='"+ message.data+"' allownetworking='all' allowscriptaccess='always' id='f_1' quality='high' bgcolor='#000' wmode='window' allowfullscreen='true' allowFullScreenInteractive='true' type='application/x-shockwave-flash' class='col-md-12 col-sd-12' height='"+((screen.availHeight-100)/2)+"'>";
                     document.getElementById("v_3").innerHTML = v;
                 }
             };
